@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- USING BOOTSTRAP 4 -->
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="update.js"></script>
+    <script src="delete.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Zoo API</title>
+</head>
+<body  onload="initialize()">
+
+<!-- Page Content -->
+<div class="container">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+	  <div class="container">
+	    <a class="navbar-brand" href="#">
+	          <img src="images/logo.png" alt="zoo logo" id="logo">
+	        </a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	    <div class="collapse navbar-collapse" id="navbarResponsive">
+	      <ul class="navbar-nav ml-auto">
+	        <li class="nav-item active">
+	          <a class="nav-link" href="#">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="/addAnimal.html">Add</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="/categories.html">Categories</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+  <!-- Portfolio Item Heading -->
+  <h1 class="my-4">Welcome to the Zoo API!<br>
+    <small>Meet some animals</small>
+  </h1>
+  
+
+  <!-- Portfolio Item Row -->
+  <div class="row">
+
+	
+    <div class="col-md-8">
+      <img id="bigImage" class="img-fluid" src="" alt="">
+    </div>
+
+    <div class="col-md-4">
+      <h3 id="currentName"></h3>
+      
+      <ul id="currentDetails"></ul>
+      
+      <div id = "buttons"></div>
+      <div id="modals"></div>
+     
+      
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+  <!-- Related Projects Row -->
+  <h3 class="my-4">Other Animals</h3>
+
+  <div class="row" id="animals">
+	<!--  All Animals will go here  -->
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+</body>

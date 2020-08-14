@@ -1,0 +1,18 @@
+body{
+  
+  background: url('images/background.png');
+}
+
+#logo{
+	height:35%;
+	width:35%;
+}
+ul li{
+	font-size: 25px;
+}
+
+.btn{
+	background-color:black;
+	color:green;
+	margin-left:15px;
+}
